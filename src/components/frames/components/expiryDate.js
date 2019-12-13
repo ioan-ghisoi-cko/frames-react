@@ -1,11 +1,11 @@
 import React from 'react';
+import { EPIRY_DATE_FRAME } from '../config';
 
 export function ExpiryDate(props) {
-	const FRAME_IDENTIFIER = 'expiry-date-frame';
 	return (
 		<div
 			{...props}
-			className={props.className !== undefined ? +`${props.className} ${FRAME_IDENTIFIER}` : FRAME_IDENTIFIER}
+			className={props.className !== undefined ? +`${props.className} ${EPIRY_DATE_FRAME}` : EPIRY_DATE_FRAME}
 		/>
 	);
 }

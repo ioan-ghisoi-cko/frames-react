@@ -79,7 +79,16 @@ export class App extends React.Component {
 			<div className="App" >
 				<Frames
 					config={config}
+					ready={this.ready}
+					frameActivated={this.frameActivated}
+					frameFocus={this.frameFocus}
+					frameBlur={this.frameBlur}
+					frameValidationChanged={this.frameValidationChanged}
+					paymentMethodChanged={this.paymentMethodChanged}
+					cardValidationChanged={this.cardValidationChanged}
+					cardSubmitted={this.cardSubmitted}
 					cardTokenized={this.cardTokenized}
+					cardTokenizationFailed={this.cardTokenizationFailed}
 				>
 					<div id="payment-form" >
 						<Card />

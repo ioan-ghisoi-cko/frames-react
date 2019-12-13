@@ -1,5 +1,6 @@
+import { CDN } from '../config';
+
 const loadCdn = () => {
-	const CDN = 'http://cdn.checkout.com/js/framesv2.min.js';
 	const existingScript = document.querySelector(`script[src$="${CDN}"]`);
 
 	return new Promise(function (resolve, reject) {

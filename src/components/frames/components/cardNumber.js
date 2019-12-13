@@ -1,11 +1,11 @@
 import React from 'react';
+import { CARD_NUBER_FRAME } from '../config';
 
 export function CardNumber(props) {
-	const FRAME_IDENTIFIER = 'card-number-frame';
 	return (
 		<div
 			{...props}
-			className={props.className !== undefined ? +`${props.className} ${FRAME_IDENTIFIER}` : FRAME_IDENTIFIER}
+			className={props.className !== undefined ? +`${props.className} ${CARD_NUBER_FRAME}` : CARD_NUBER_FRAME}
 		/>
 	);
 }

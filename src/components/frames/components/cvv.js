@@ -1,11 +1,11 @@
 import React from 'react';
+import { CVV_FRAME } from '../config';
 
 export function Cvv(props) {
-	const FRAME_IDENTIFIER = 'cvv-frame';
 	return (
 		<div
 			{...props}
-			className={props.className !== undefined ? +`${props.className} ${FRAME_IDENTIFIER}` : FRAME_IDENTIFIER}
+			className={props.className !== undefined ? +`${props.className} ${CVV_FRAME}` : CVV_FRAME}
 		/>
 	);
 }
